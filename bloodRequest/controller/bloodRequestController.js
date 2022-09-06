@@ -85,7 +85,8 @@ export const acceptBloodRequest = async (req, res) => {
   if (bloodQuantityOfReqBlood < bloodUnit) {
     return res.json({
       condition: "unsucess",
-      msg: `Request Rejected Available Blood Quanity of ${bloodGroup}: ${bloodQuantityOfReqBlood} Requested Blood Quanity of ${bloodGroup}: ${bloodUnit} Deficit Blood Quantity of ${bloodGroup}: ${
+      msg: `Request Rejected Available Blood Quanity of ${bloodGroup}: ${bloodQuantityOfReqBlood} 
+      Requested Blood Quanity of ${bloodGroup}: ${bloodUnit} Deficit Blood Quantity of ${bloodGroup}: ${
         bloodUnit - bloodQuantityOfReqBlood
       } `,
     });

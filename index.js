@@ -1,5 +1,5 @@
 
-import loginRouter from "../server/login/routes/loginUserRoute.js";
+import loginRouter from "./login/routes/loginUserRoute.js";
 import registerRouter from "./register/routes/registerUserRoute.js";
 import bloodRequestRouter from "./bloodRequest/routes/bloodRequestRoutes.js";
 import donationRequestRouter from "./donationRequest/routes/bloodDonationRouter.js";

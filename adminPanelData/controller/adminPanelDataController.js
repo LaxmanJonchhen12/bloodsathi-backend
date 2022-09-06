@@ -13,10 +13,10 @@ export const getHomePageData = (req, res) => {
         } else {
             return res.json(
                 [      
-                {title: "Total Donors",value: result[0]['count(id)'],},
-                {title: "Total Blood Requests",value: result[1]['count(id)'],},
-                {title: "Total Approved  Blood Requests",value: result[2]['count(id)'],},
-                {title: "Total Blood Unit",value: result[3]['count(id)'],}        
+                {title: "Total Donors",value: result[0]['count(id)'],icon:"faUsers"},
+                {title: "Total Blood Requests",value: result[1]['count(id)'], icon:"faSpinner"},
+                {title: "Total Approved  Blood Requests",value: result[2]['count(id)'], icon:"faCheck"},
+                {title: "Total Blood Unit",value: result[3]['count(id)'], icon:"faWarehouse"},      
                 ]
             );
         }
